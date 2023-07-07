@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+                box-sizing: border-box;
+            }
+            #logo{
+                width: 50%;
+                min-height: 80px;
+                background-color:aquamarine;
+                float: left;
+                line-height: 80px;
+                color: black;
+                padding-left: 20px;
+                padding-bottom: 50px;
+            }
+            #nav{
+                width: 50%;
+                min-height: 80px;
+                background-color:white;
+                float: left;
+                line-height: 80px;
+            }
+            /* #button{
+                width: 30%;
+                min-height: 80px;
+                background-color:gray;
+                float: right;
+                line-height: 80px;
+                color:white;
+                
+            } */
+            .clearfix::after{
+                content: "";
+                display: block;
+                clear: both;
+            }
+            ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:white;
+  text-align: center;
+            }
+  li{
+    display: inline-block;
+    padding: 10px 12px;
+    color: black;
+    line-height: 80px;
+  }
+  #logo::first-line{
+    color: red;
+  }
+  #logo::before{
+    content: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpc3WsEGTJG-ZHVSWtLnT3kIXLazPKe3f1vVdw0jdDpA&usqp=CAU&ec=48665698);
+  }
+  
+  
+
+
+            
+
+        </style>
+    </head>
+    <body>
+        <div id="parent" class="clearfix">
+            <div id="logo">
+                FOOD DEV
+            </div>
+            <div id="nav">
+                <ul>
+                    <li><a href="#our menu">OUR MENU</a></li>
+          <li><a href="#Blog">BLOG</a></li>
+          <li><a href="#Features">FEATURES</a></li>
+          <li><a href="#Pages">PAGES</a></li>
+          <li><a class="contact" href="#Contact Us">CONTACT US</a></li>
+                    
+                </ul>
+            </div>
+            <!-- <div id="button">
+               <button>RESERVATION</button> 
+            </div> -->
+        </div>
+        
+<div class="body">
+<img class="image" src=""https://img.freepik.com/free-photo/front-view-burger-stand_141793-15542.jpg?w=2000">
+        </div>
+    </body>
+</html>

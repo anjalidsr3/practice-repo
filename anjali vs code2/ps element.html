@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1:hover::before{
+                content: "hello! ";
+                background: red;
+                color: aqua;
+                font-size: 30px;
+            
+            }
+            h1::after{
+                content:" hello!";
+                background: red;
+                color: aqua;
+                font-size: 30px;
+            }
+            ::marker{
+                color: red;
+                font-size: 30px;
+            }
+            ::selection{
+                color: red;
+                background: yellow;
+            }
+            p::after{
+                content: url(symbol2.png);
+                color: green;
+                  }
+                  p::before{
+                    content: url(right\ symbol.png);
+                    height: 5px;
+                    width: 5px;
+                  }
+            
+                
+            
+
+        </style>
+    </head>
+    <body>
+        <h1>this is before and after pseudo element</h1>
+        <p>this is before and after pseudo element</p>
+        <ul>
+            <li>peaches</li>
+            <li>apples</li>
+            <li>plums</li>
+            <li>mangoes</li>
+                
+        </ul>
+        <ol>
+            <li>peaches</li>
+            <li>apples</li>
+            <li>plums</li>
+            <li>mangoes</li>
+                 
+        </ol>
+    </body>
+</html>

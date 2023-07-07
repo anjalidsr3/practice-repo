@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+            }
+            nav{
+                width: 100%;
+                height: 75px;
+                line-height: 75px;
+                padding: 0px 100px;
+                position: sticky
+                background-color:white;
+                
+
+            }
+            nav{
+                
+            }
+            nav .logo p{
+                font-size: 30px;
+                font-weight: bold;
+                float: left;
+                color: black;
+                text-transform: uppercase;
+                letter-spacing: 1.5px;
+                cursor: pointer;
+
+            }
+            nav ul{
+                float: right;
+            }
+            nav li{
+                display: inline-block;
+                list-style: none;
+            }
+            nav li a{
+                font-size: 18px;
+                text-transform: uppercase;
+                padding: 0px 30px;
+                color: black;
+                text-decoration: none;
+            }
+            nav li a:hover{
+                color: red;
+                
+            }
+            .secondimage{
+                width: 100%;
+                height: auto;
+                position: absolute;
+                top: 75px;
+            
+                
+            }
+            .secondh2{
+                position: absolute;
+                top: 100px;
+                text-align: center;
+                font-size: 30px;
+                color: yellow;
+                right: 550px;
+            }
+            .secondh1{
+                position: absolute;
+                top: 140px;
+                text-align: center;
+                color: yellow;
+                margin-right: 100px;
+            left: 450px;
+                
+            }
+            .secondbutton{
+                position: relative;
+                top: 150px;
+                border-radius: 30px;
+                background-color:red;
+                color: white;
+                padding: 10px;
+                left: 610px;
+                border: none;
+                right: 50px;
+                
+            }
+            .secondbutton:hover{
+                background-color: transparent;
+    border: 2px solid crimson;
+    cursor: pointer;
+
+            }
+            .third image{
+                position: absolute;
+                width:50px ;
+                height:60px ;
+                top: 900px;
+                margin-left: 50px;
+                color: maroon;
+                
+            }
+            #third{
+                width: 100%
+            }
+            #third .imagecontainer{
+                
+                float: left;
+                width: 33.33%;
+                padding:45px 10px;
+                text-align: center;
+                position: relative;
+                top: 750px;
+              box-sizing: border-box;
+            }  
+                
+                
+                
+            
+
+                
+                
+            
+            /* .third h3{padding-top: 30px;
+                position: absolute;
+                top: 950px;
+                margin-left: 30px;
+                padding-bottom: 20px;
+                padding-top: 30px;
+            } 
+            .third p{
+                position: absolute;
+                top: 1000px;
+                padding-top: 20px; */
+            }
+           
+             /* .line{
+                position: absolute; 
+                
+    
+    left: 0px;
+    height: 1px;
+    background-color:black;
+    width: 35px;
+    right: 0;
+    margin: auto;
+    margin-top: 130px;
+    margin-left: 650px;
+    margin-bottom: 80px;
+            } */
+            .video{
+                margin-top: 280px;
+                margin-left: 520px;
+                width: 90%;
+            }
+            #second{
+                width: 100%;
+                height: 90px;
+                
+                
+            }
+           
+            
+            
+             .line{
+                position: relative;
+                
+    
+    left: 0px;
+    height: 2px;
+    background-color:blueviolet;
+    width: 70px;
+    right: 0;
+    margin: auto;
+    bottom: 35px;
+    
+    
+            }
+             /* .lne2{
+                position: relative;
+                
+    
+    left: 0px;
+    height: 2px;
+    background-color:blueviolet;
+    width: 70pxpx;
+    right: 0;
+    margin: auto;
+    
+    
+            } */
+            #second{
+                
+            }
+            #third image{
+                width: 100px;
+                height: 70px;
+                text-align: center;
+                
+            }
+            .clearfix::after{
+                content: ();
+                display: block;
+                clear: both;
+
+            }
+            #featured{
+                width: 100%;
+                height: 100px;
+                padding: 15px;
+                position: absolute;
+                top: 1200px;
+                text-align: center;
+            }
+            #featured video{
+                 margin-top
+                 : 20px;
+            }
+            .box{
+                float: left;
+                width: 25%;
+                padding:2px;
+padding-left: 40px;
+padding-top: 80px;
+            }
+
+                #boxdiv{
+                    width: 100%;
+                    position: absolute;
+                    
+                    top: 1500px;
+                }
+                #footer{
+                    width: 100%;
+                    
+                    position: absolute;
+                    top: 1800px;
+                    text-align: center;
+                    padding: 20px;
+                    margin-top: 20px;
+                }
+                .box button{
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                margin-top: 20px;
+                border-color: cyan;
+                color: cyan;
+                background-color: white;
+                
+                }
+                .box button:hover{
+                    background-color: transparent;
+    border: 2px solid crimson;
+    cursor: pointer;
+
+                }
+                #footer button{
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    margin-top: 20px; 
+                    border-color: cyan; 
+                    background-color: white;
+                    color: cyan;
+                }
+                #footer button:hover{
+                    background-color: transparent;
+    border: 2px solid crimson;
+    cursor: pointer;
+
+                }
+                #footer .line{
+                    top: 2px;
+                    width: 160px;
+
+                }
+                #boxdiv .line{
+                    top: 4px;
+                    /* padding-right: 20px;  */
+                    width:100px ;
+                     margin-left: 8px; 
+                    
+                }
+                #boxdiv p{
+                    margin-top: 15px;
+                }
+                #footer p{
+                    margin-top: 15px;
+                }
+                #featured p{
+                    margin-top: 15px;
+                }
+                #featured .line{
+                    bottom: 40px;
+                    width: 100px;
+                }
+                #third p{
+                    margin-top: 20px;
+                }
+                #third h3{
+                    margin-top: 10px;
+                }
+                #foot{
+                    background-color: lightgray;
+        width: 100%;
+        height: 200px;
+        position: absolute;
+        margin-top: 1900px;
+        padding-left: 20px;
+        padding-top: 20px;
+        }
+        .foot-menu{
+            float: left;
+            width: 25%;
+        }
+        
+
+                
+                .foot-menu h3{
+                font-size: 18px;
+                font-weight: bold;
+            }
+            .foot-menu ul{
+                padding: 0;
+                margin: 0;
+                
+            }
+            .foot-menu li{
+                list-style: none;
+            }
+            .foot-menu ul li a{
+                font-size: 18px;
+                line-height: 36px;
+                color:gray;
+                list-style: none;
+            }
+            .foot-menu ul li a:hover{
+                color: orange;
+            }
+            #third{
+                margin-bottom: 20px;
+            }
+            #third image{
+                background-color: lightgreen;
+                border: 3px solid green;
+            }
+
+
+
+            
+
+        </style>
+    </head>
+    <body>
+        <nav>
+        <div class="logo">
+            <p>Simply</p>
+        </div>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">PORTFOLIO</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">BLOG</a></li>
+            </ul>
+        </nav>
+        <div id="second">
+            <img class="secondimage" src="https://thumbs.dreamstime.com/b/mount-everest-4208617.jpg">
+            <h2 class="secondh2">A MINIMAL,CLEAN</h2>
+            <h1 class="secondh1">LAYOUT FOR WEB DESIGN</h1>
+            <button class="secondbutton">Get Started</button>
+        </div>
+        <div id="third" class="clearfix">
+       
+          <div class="imagecontainer">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN827JI0KZqhgLgBd7K3J4fvzPu0htDUmOdQngk4gJ2w&usqp=CAU&ec=48665698">
+        <h3>EASY TO EDIT</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>Iusto provident laboriosam voluptas possimus,<br> perspiciatis, ducimus quo sequi iure explicabo quis <br>repudiandae accusantium neque at similique.</p>
+    </div>
+    <div class="imagecontainer">
+        <img src="data:image/png;base64,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">
+        <h3>LAYERED PSD</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>Iusto provident laboriosam voluptas possimus,<br> perspiciatis, ducimus quo sequi iure explicabo quis <br>repudiandae accusantium neque at similique.</p>
+    </div>
+    <div class="imagecontainer">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTRvnAIe4foK6qpz2LHKm17GZn3ac7Mlry_apM1agKBA&usqp=CAU&ec=48665698">
+        <h3>READY TO GO</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>Iusto provident laboriosam voluptas possimus,<br> perspiciatis, ducimus quo sequi iure explicabo quis <br>repudiandae accusantium neque at similique.</p>
+    </div>
+    </div>
+    <div id="featured">
+        <h2 class="featuredh2">FEATURED CONTENT</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet ea sint,<br> dicta sit aperiam consectetur aliquam, quia culpa quae nesciunt nam voluptas enim placeat nobis.</p>
+        <div class="line"></div>
+        <video controls src="https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcQpf_iZlaL3kjhlD0UL_qHGhv4yYo25FHweKg"></video>
+   </div>
+        <div id="boxdiv">
+            
+             <div class="box">
+                <h2>SECONDARY<br>CONTENT</h2>
+                <div class="line"></div>
+                <p>Lorem ipsum dolor, sit amet consectetur<br> adipisicing elit. Nesciunt numquam porro <br>aliquam, unde tempore inventore.</p>
+               <button>View More</button>
+            </div>
+            <div class="box">
+                <img src="mount.png">
+            </div>
+            <div class="box">
+               <h2>SECONDARY<br>CONTENT</h2>
+                <div class="line"></div>
+                <p>Lorem ipsum dolor, sit amet consectetur<br> adipisicing elit. Nesciunt numquam porro <br>aliquam, unde tempore inventore.</p>
+               <button>View More</button>  
+            </div>
+            <div class="box">
+                <img src="mount.png">
+            </div> 
+            </div>
+            <div id="footer">
+                <h2>HEARD ENOUGH</h2>
+                <div class="line"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Assumenda suscipit repellat ipsa nam maiores ratione deserunt! Eos doloremque qui aliquam?</p>
+<button>Get Started</button>
+            </div>
+            <div id="foot">
+                <div class="container">
+                    <div class="foot-menu">
+                        <h3>Main Navigation</h3>
+                        <ul>
+                            <li><a href="#">Homepage</a></li>
+                            <li><a href="#">Our Portfolio</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Get In Touch</a></li>
+                        </ul>
+                    </div>
+                    
+                        <div class="foot-menu">
+                            <h3>Brand</h3>
+                            <ul>
+                                <li><a href="#">Brand experience</a></li>
+                                <li><a href="#">platform & positioning</a></li>
+                                <li><a href="#">trends & insights</a></li>
+                                <li><a href="#">marketing strategy</a></li>
+                            </ul>
+                        </div>
+                        <div class="foot-menu">
+                            <h3>Experience</h3>
+                            <ul>
+                                <li><a href="#">web designing</a></li>
+                                <li><a href="#">mobile app designing</a></li>
+                                <li><a href="#">UI/UX Design</a></li>
+                                <li><a href="#">dashboard & tool</a></li>
+                            </ul>
+                        </div>
+                        <div class="foot-menu">
+                            <h3>Strategy</h3>
+                            <ul>
+                                <li><a href="#">logo & identity</a></li>
+                                <li><a href="#">content and management</a></li>
+                                <li><a href="#">system & gadgets</a></li>
+                                <li><a href="#">communications</a></li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+            </footer>
+            
+        
+        
+
+
+    
+        
+  
+    
+  
+    </body> 
+
+</html>

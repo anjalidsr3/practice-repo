@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color: aqua;
+            }
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color:gray;}
+
+li a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 8px 16px;
+}
+li a:hover:not(.active){
+    background-color: green;
+    color: blue;
+}
+li a:active{
+    background-color: lightcoral;
+    color: white;
+}
+        </style>
+    </head>
+    <body>
+        <h1>home page</h1>
+        <h2>vertical navigation bar</h2>
+        <ul>
+            <li><a class="active" href="home.html">home</a></li>
+            <li><a href="news.html">news</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="about.html">about</a></li>
+        </ul>
+    </body>
+</html>

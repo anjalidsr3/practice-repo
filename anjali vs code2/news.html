@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color:gray;
+}
+li a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 8px 16px;
+}
+li a:hover{
+    background-color: bisque;
+    color: blue;
+}
+li a.active{
+    background-color: brown;
+    color: white;
+
+}
+li a:hover:not(.active){
+    background-color: blueviolet;
+    color: white;
+}
+        </style>
+    </head>
+    <body>
+        <h1>news page</h1>
+        <h2>vertical navigation bar</h2>
+        <ul>
+            <li><a class="active" href="home.html">home</a></li>
+            <li><a href="news.html">news</a></li>
+            <li><a href="#contact">contact</a></li>
+            <li><a href="#about">about</a></li>
+        </ul>
+    </body>
+</html>
