@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+   .board{
+      width:400px;
+      height:400px;
+border: 1px solid blue;
+      display:flex;
+      flex-wrap:wrap;
+    }
+    .black{
+      background:black;
+    }
+    .tile{
+      border:1px solid black;
+      width:48px;
+      height:48px;
+    }
+  </style>
+  </head>
+  <body>
+    <div id="container" class="board"></div>
+    <script>
+      var flag=true;
+      var board=document.getElementById("container");
+      for (var i=0; i<64; i++){
+        var tile=document.createElement("div");
+        var rowNumber=i / 8;
+        if(Math.floor(rowNumber) %2 === 0){
+          if(i%2 !==0){
+          tile.classList.add("black") ;  
+             }
+        }else{
+          if(i%2 ===0){
+            tile.classList.add("black");
+          }
+        }
+        tile.classList.add("tile");
+        board.appendChild(tile);
+      }
+    </script>
+  </body>
+</html>

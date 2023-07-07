@@ -1,0 +1,35 @@
+<html lang="en">
+
+<head>
+  </head>
+  <body>
+    <center id="penalty-value">0</center>
+    <center><button id ="btn">+10</button></center>
+<!--      // stage 2  -->
+        <center><input type="number" id="custom-input"/>
+          <button id="custom-btn">add custom value</button></center>
+          
+    <script>
+      function add10() {
+       var penaltyElement= document.getElementById("penalty-value");
+        penaltyElement.innerText=Number(penaltyElement.innerText)+10;
+      }
+        // stage2
+        function addcustomValue(){
+          var penaltyElement=document.getElementById("penalty-value");
+          var inputvalue=document.getElementById("custom-input").value;
+          var sum=Number(penaltyElement.innerText)+Number(inputvalue);
+          penaltyElement.innerText=sum;
+document.getElementById("custom-input").value=" ";
+
+        }
+        
+        
+      
+      document.getElementById("btn").addEventListener("click",add10);
+      // stage2
+       document.getElementById("custom-btn").addEventListener("click",addcustomValue);
+      
+    </script>
+  </body>
+</html>

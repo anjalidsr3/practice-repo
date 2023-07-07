@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <script>
+      const { firstName, lastName, ...otherInfo } = {
+  firstName: "Oluwatobi",
+  lastName: "Sofela", 
+  companyName: "CodeSweetly",
+  profession: "Web Developer",
+  gender: "Male"
+}
+console.log(otherInfo);
+    </script>
+  </body>
+  
+</html>

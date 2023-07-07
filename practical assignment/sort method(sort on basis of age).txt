@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+  <html>
+    <body>
+      <script>
+        // sort method a-b returns descending order
+        
+        const users=[
+          {
+            id:1,
+            name:"rahul",
+            age:23,
+            gender:"male",
+          },
+          {
+            id:2,
+            name:"anjali",
+            age:25,
+            gender:"male",
+          },
+          {
+            id:3,
+            name:"mansi",
+            age:24,
+            gender:"female",
+          },
+        ];
+        const sortedAsPerId=users.sort((a,b)=>a.age-b.age);
+        
+        console.log(sortedAsPerId);
+                                    
+      </script>
+    </body>
+    </html>

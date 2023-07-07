@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+<!--       .blue-text{
+        color:blue;
+      } -->
+    </style>
+  </head>
+<body>
+<ul id="list" >
+  <li>item1</li>
+  <li>item2</li>
+  <li>item3</li>
+  </ul>
+  <button id="submit">turn them blue</button>
+  <script>
+  function changeColor(){
+  var liElements=document.getElementsByTagName("li");
+    for (var i=0; i<liElements.length; i++){
+      liElements[i].style.color="blue";
+    }
+  }
+  document.getElementById("submit").addEventListener("click",changeColor);
+  </script>
+
+</body>
+</html>

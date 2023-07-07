@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <style>       
+        .grid-container{
+               border: 2px solid black; 
+                padding:20px;
+              } 
+        .grid-item{
+            display: grid;
+            grid-template-columns: 150px 150px 150px;
+    }
+    .green-box{
+      background-color:green;
+    }
+            
+                
+              } 
+          </style>  
+  </head>
+  <body>
+    <div  class="grid-item">
+    <div id="div1" class="grid-container" onclick="changeStyle(this)"></div>
+    <div id="div2" class="grid-container" onclick="changeStyle(this)"></div>
+    <div id="div3" class="grid-container" onclick="changeStyle(this)"></div>
+    <div id="div4" class="grid-container" onclick="changeStyle(this)"></div>
+    <div id="div5" class="grid-container" onclick="changeStyle(this)"></div>
+    <div id="div6" class="grid-container" onclick="changeStyle(this)"></div>
+    <div id="div7" class="grid-container" onclick="changeStyle(this)"></div>
+    <div id="div8" class="grid-container" onclick="changeStyle(this)"></div>
+    <div id="div9" class="grid-container" onclick="changeStyle(this)"></div>
+    </div>
+    <script>
+       var count=1;
+
+       function changeStyle(counter){
+      if (count<=9)
+      {
+        if (count%2!=0)
+      {
+        document.getElementById(counter.id).innerHTML="X";
+      }else
+        {
+           document.getElementById(counter.id).innerHTML="O";
+        }
+         count++;
+       }else
+         {
+           
+           reset();
+         }
+      }
+      function reset()
+      {
+        for (var i=1; i<=9; i++)
+          {
+            document.getElementById('div'+i).innerHTML="";
+          }
+      }
+    </script>
+  </body>
+</html>

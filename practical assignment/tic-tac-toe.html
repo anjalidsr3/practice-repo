@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <style>       
+        .grid-container{
+               border: 2px solid black; 
+                padding:20px;
+              } 
+        .grid-item{
+            display: grid;
+            grid-template-columns: 150px 150px 150px;
+    }
+    .green-box{
+      background-color:green;
+    }
+            
+                
+              } 
+          </style>  
+  </head>
+  <body>
+    <div class="grid-item">
+    <div id="one" class="grid-container" onclick="changeStyle(this)"></div>
+    <div id="two" class="grid-container" onclick="changeStyle(this)"></div>
+    <div id="three" class="grid-container" onclick="changeStyle(this)"></div>
+    <div id="four" class="grid-container" onclick="changeStyle(this)"></div>
+    <div id="five" class="grid-container" onclick="changeStyle(this)"></div>
+    <div id="six" class="grid-container" onclick="changeStyle(this)"></div>
+    <div id="seven" class="grid-container" onclick="changeStyle(this)"></div>
+    <div id="eight" class="grid-container" onclick="changeStyle(this)"></div>
+    <div id="nine" class="grid-container" onclick="changeStyle(this)"></div>
+    </div>
+    <script>
+       var count=1;
+
+       function changeStyle(counter){
+        if (count%2!=0)
+      {
+        document.getElementById(counter.id).innerHTML="X";
+      }else
+        {
+           document.getElementById(counter.id).innerHTML="O";
+        }
+         count++;
+       }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+How to Order by Name Alphabetically in JavaScript
+In a real-world scenario, we might have an array of users with each user's information in an object. This information could be anything alongside the name of the user. For example:
+
+let users = [
+  {
+    name: "John Doe",
+    age: 17
+  },
+  {
+    name: "Elon Doe",
+    age: 27
+  },
+  {
+    name: "Alex Doe",
+    age: 14
+  }
+];
+Looking at the object above, the previous method in which we just applied the sort() method on the array directly will not work. Instead, it will throw the same array but the items won't be in the order we want.
+
+We will use the sort() method alongside the compare function to order this array of users by name.
+
+We will use the compare function to define an alternative sort order. It returns a negative, zero, or positive value, depending on the arguments:
+
+Syntax:
+
+function(a, b){return a - b}
+When we pass this comparison function into the sort() method, it compares each value based on the condition we set and then sorts each name according to the returned value (negative, zero, positive).
+
+If the result is negative, a is sorted before b.
+If the result is positive, b is sorted before `a'.
+If the result is 0, no changes are made to the sort order of the two values.
+Using the example above, we can now use the sort() method alongside the compare function this way:
+
+users.sort(function (a, b) {
+  if (a.name < b.name) {
+    return -1;
+  }
+  if (a.name > b.name) {
+    return 1;
+  }
+  return 0;
+});
+
+console.log(users);
+The above code compares each name. If it's greater, it returns 1. If it's less, it returns -1. Otherwise, it returns 0. The returned value is used to order our array's values alphabetically:
+
+[
+  {
+    name: "Alex Doe",
+    age: 14
+  },
+  {
+    name: "Elon Doe",
+    age: 27
+  },
+  {
+    name: "John Doe",
+    age: 17
+  }
+]
+Note: Just like we saw previously, this always works according to letter case and will order uppercase letters before lowercase:
+
+let users = [
+  {
+    name: "alex Doe",
+    age: 14
+  },
+  {
+    name: "Elon Doe",
+    age: 27
+  },
+  {
+    name: "John Doe",
+    age: 17
+  }
+];
+    
+users.sort(function (a, b) {
+  if (a.name < b.name) {
+    return -1;
+  }
+  if (a.name > b.name) {
+    return 1;
+  }
+  return 0;
+});
+
+console.log(users);
+Output:
+
+[
+  {
+    name: "Elon Doe",
+    age: 27
+  },
+  {
+    name: "John Doe",
+    age: 17
+  },
+  {
+    name: "alex Doe",
+    age: 14
+  }
+]

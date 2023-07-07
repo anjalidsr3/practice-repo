@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+    .active{
+  color: red;
+}
+    </style>
+  </head>
+  <body>
+<ul id="list">
+   <li>Text1</li>
+   <li>Text2</li>
+   <li>Text3</li>
+   <li>Text4</li>
+</ul>
+  </body>
+  <script>
+    var ul = document.getElementById("list");
+
+var listItems = ul.getElementsByTagName("li");
+
+for(li of  listItems){
+  li.addEventListener('click', function(){
+    if(this.classList.contains('active')){
+      this.classList.remove("active");
+    } else {
+      this.classList.add("active");
+    }
+  })
+}
+  </script>
+</html>

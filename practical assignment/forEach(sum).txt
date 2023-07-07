@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            let total=0;
+            const scores=[22,56,78,89]
+            scores.forEach((score)=>{
+total=total+score;
+            });
+console.log(total);
+            
+
+            
+        </script>
+    </body>
+</html>

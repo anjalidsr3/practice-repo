@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            function fun(...input){
+              let sum=0;
+              for(let i of input){
+                sum=sum+i;
+              }
+              return sum;
+            }
+          console.log(fun(6,7,4,3));
+            </script>
+        </script>
+    </body>
+</html>

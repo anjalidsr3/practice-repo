@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    .box{
+      border:2px solid black;
+      padding:20px;
+      
+      font-size:xx large;
+    }
+    .container{
+      width:70%;
+      display:grid;
+      grid-template-columns: 150px 150px 150px;
+    }
+  </style>
+  </head>
+  <body>
+    <center class="container">
+      <div id="1" class="box" onclick="taketurn(1)"></div>
+       <div id="2" class="box" onclick="taketurn(2)"></div>
+       <div id="3" class="box" onclick="taketurn(3)"></div>
+       <div id="4" class="box" onclick="taketurn(4)"></div>
+       <div id="5" class="box" onclick="taketurn(5)"></div>
+      <div id="6" class="box" onclick="taketurn(6)"></div>
+       <div id="7" class="box" onclick="taketurn(7)"></div>
+       <div id="8" class="box" onclick="taketurn(8)"></div>
+       <div id="9" class="box" onclick="taketurn(9)"></div>
+    </center>
+    
+    <script>
+     var counter=0;
+      function taketurn(id){
+        counter ++;
+        var clickedBox=document.getElementById(id);
+        if (counter%2 !==0){
+          clickedBox.innerText="X";
+     }else{
+       clickedBox.innerText="O";
+     }
+      }
+    </script>
+  </body>
+</html>

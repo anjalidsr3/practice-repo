@@ -1,0 +1,29 @@
+<DOCTYPE html>
+  <html>
+    <body>
+      <script>
+        const inputArray=[
+          {
+            id:1,
+            name:"user1",
+            age:23,
+          },
+          {
+            id:2,
+            name:"user2",
+            age:25,
+          },
+          {
+            id:3,
+            name:"user3",
+            age:24,
+          },
+        ];
+        const resultArray=inputArray.reduce((acc, currValue, index, arr)=>{
+          console.log("acc value:", acc);
+          console.log("currValue:",currValue);
+          return acc;
+        },0);
+      </script>
+    </body>
+    </html>

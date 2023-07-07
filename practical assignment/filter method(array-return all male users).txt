@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+  <html>
+    <body>
+      <script>
+        
+        const users=[
+          {
+            id:1,
+            name:"user1",
+            age:23,
+            gender:"male",
+          },
+          {
+            id:2,
+            name:"user2",
+            age:25,
+            gender:"male",
+          },
+          {
+            id:3,
+            name:"user3",
+            age:24,
+            gender:"female",
+          },
+        ];
+        const maleUsers=users.filter((currValue)=>{
+          return currValue.gender==="male";
+        });
+        console.log(maleUsers);
+                                    
+      </script>
+    </body>
+    </html>

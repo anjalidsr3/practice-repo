@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<!--   apply method of this keyword -->
+  <body>
+    <p id="demo"></p>
+    <script>
+     const person = {
+  firstName:"John",
+  lastName: "Doe",
+  fullName: function(city,country) {
+    return this.firstName + " " + this.lastName + "," + city + "," + country ;
+  }
+}
+     const person1 = {
+  firstName:"anjali",
+  lastName: "singh"
+}
+const person2 = {
+  firstName:"Madhvi",
+  lastName: "singh"
+}
+document.getElementById("demo").innerHTML = person.fullName.apply(person1, ["Gujarat", "India"]);
+      
+    </script>
+  </body>
+</html>

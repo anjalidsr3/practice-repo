@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  </head>
+  <body>
+    <input id="input"  placeholder="enter list item here">
+    <button id="submit">Submit</button>
+    <ul id="list">
+
+    </ul>
+    <script>
+      function addToList(){
+        var inputvalue=document.getElementById("input").value;
+        var liElement=document.createElement("li");
+        liElement.innerText=inputvalue;
+        document.getElementById("list").appendChild(liElement);
+        document.getElementById("input").value="";
+      }
+      document.getElementById("submit").addEventListener("click",addToList);
+    </script>
+  </body>
+</html>

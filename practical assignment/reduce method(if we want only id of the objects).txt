@@ -1,0 +1,31 @@
+<DOCTYPE html>
+  <html>
+    <body>
+      <script>
+        // if we want only the ids of the objects then we make a variable tempObj
+        const inputArray=[
+          {
+            id:1,
+            name:"user1",
+            age:23,
+          },
+          {
+            id:2,
+            name:"user2",
+            age:25,
+          },
+          {
+            id:3,
+            name:"user3",
+            age:24,
+          },
+        ];
+        const result=inputArray.reduce((acc, currValue, index, arr)=>{
+          const tempObj={id:currValue.id};
+          acc.push(tempObj);
+          return acc;
+        },[]);
+        console.log("result:",result);
+      </script>
+    </body>
+    </html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <input id="input1" type="text" placeholder="value1">
+     <input id="input2" type="text" placeholder="value2">
+    <button  id="submit" onclick="power()">submit</button>
+    <p id="output"></p>
+    <script>
+       function power() {
+          var a=document.getElementById("input1").value;
+         var b=document.getElementById("input2").value;
+        var result=1;
+         for (var i=1; i<=b; i++){
+           result=result*a;
+         }
+         document.getElementById("output").innerHTML=result;
+       }
+             
+             
+          
+      
+      
+    </script>
+    
+     
+    
+  </body>
+</html>
